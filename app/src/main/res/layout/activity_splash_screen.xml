@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    tools:context="com.ameya.fwpredictorleague.SplashScreenActivity">
+
+    <ImageView
+        android:layout_width="111dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_iv_logo"
+        android:id="@+id/imageView"
+        android:layout_marginTop="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nav_header_caption"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:textSize="16dp"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nav_header_sub_caption"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/textView2"
+        android:textSize="14dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

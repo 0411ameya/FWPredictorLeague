@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_myFWPL"
+            android:icon="@drawable/ic_soccer_black_24dp"
+            android:title="@string/nav_myFWPL" />
+        <item
+            android:id="@+id/nav_matchday"
+            android:icon="@drawable/ic_local_play_black_24dp"
+            android:title="@string/nav_matchday" />
+        <item
+            android:id="@+id/nav_allMatchdays"
+            android:icon="@drawable/ic_trending_up_black_24dp"
+            android:title="@string/nav_allMatchdays" />
+        <item
+            android:id="@+id/nav_table"
+            android:icon="@drawable/ic_equalizer_black_24dp"
+            android:title="@string/nav_table" />
+    </group>
+
+</menu>

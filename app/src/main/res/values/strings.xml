@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FW Predictor League</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    //navigation header strings
+    <string name="nav_header_caption">Futbol Worshippers Predictor League</string>
+    <string name="nav_header_sub_caption">Season 4</string>
+
+    //navigation menu strings
+    <string name="nav_myFWPL">My FWPL</string>
+    <string name="nav_matchday">Matchday</string>
+    <string name="nav_allMatchdays">All Matchdays</string>
+    <string name="nav_table">League Table</string>
+
+</resources>

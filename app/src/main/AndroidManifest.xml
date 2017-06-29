@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ameya.fwpredictorleague">
 
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_iv_logo"
@@ -9,7 +14,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".HomeActivity"
             android:label="@string/app_name"
@@ -26,6 +29,9 @@
                 <action android:name="android.intent.action.HOME" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".FwLoginActivity"
+            android:label="@string/title_activity_fw_login"></activity>
     </application>
 
 </manifest>

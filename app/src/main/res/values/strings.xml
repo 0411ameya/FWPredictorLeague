@@ -6,14 +6,54 @@
 
     <string name="action_settings">Settings</string>
 
-    //navigation header strings
+    <!-- Strings related to navigation header -->
     <string name="nav_header_caption">Futbol Worshippers Predictor League</string>
     <string name="nav_header_sub_caption">Season 4</string>
 
-    //navigation menu strings
+    <!-- Strings related to navigation menu -->
     <string name="nav_myFWPL">My FWPL</string>
     <string name="nav_matchday">Matchday</string>
     <string name="nav_allMatchdays">All Matchdays</string>
     <string name="nav_table">League Table</string>
+    <string name="title_activity_fw_login">My FWPL Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- String Array for Team Names -->
+    <string-array name="TeamNames">
+        <item>AFC Bournemouth</item>
+        <item>Arsenal FC</item>
+        <item>Brighton &amp; Hove Albion</item>
+        <item>Burnley FC</item>
+        <item>Chelsea FC</item>
+        <item>Crystal Palace</item>
+        <item>Everton FC</item>
+        <item>Huddersfield Town</item>
+        <item>Leicester City</item>
+        <item>Liverpool FC</item>
+        <item>Manchester City</item>
+        <item>Manchester United</item>
+        <item>Newcastle United</item>
+        <item>Southampton FC</item>
+        <item>Stoke City</item>
+        <item>Swansea City</item>
+        <item>Tottenham Hotspur</item>
+        <item>Watford FC</item>
+        <item>West Bromwich Albion</item>
+        <item>West Ham United</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

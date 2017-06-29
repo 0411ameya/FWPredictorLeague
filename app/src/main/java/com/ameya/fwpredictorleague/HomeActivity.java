@@ -1,5 +1,6 @@
 package com.ameya.fwpredictorleague;
 
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -9,6 +10,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
+
+import fragments.AllMatchDaysFragment;
+import fragments.LeagueTableFragment;
+import fragments.MatchDayFragment;
+import fragments.MyFwplFragment;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -30,6 +37,11 @@ public class HomeActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         navigationView.setCheckedItem(0);
+
+
+        FragmentManager fm = getFragmentManager();
+        fm.beginTransaction().replace(R.id.content_frame, new MyFwplFragment()).commit();
+
     }
 
     @Override
@@ -61,16 +73,30 @@ public class HomeActivity extends AppCompatActivity
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
+        FragmentManager fm = getFragmentManager();
+
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
         if (id == R.id.nav_myFWPL) {
+            FrameLayout fl = (FrameLayout) findViewById(R.id.content_frame);
+            //fl.removeAllViews();
+            fm.beginTransaction().replace(R.id.content_frame, new MyFwplFragment()).addToBackStack(null).commit();
 
         } else if (id == R.id.nav_matchday) {
+            FrameLayout fl = (FrameLayout) findViewById(R.id.content_frame);
+            //fl.removeAllViews();
+            fm.beginTransaction().replace(R.id.content_frame, new MatchDayFragment()).addToBackStack(null).commit();
 
         } else if (id == R.id.nav_allMatchdays) {
+            FrameLayout fl = (FrameLayout) findViewById(R.id.content_frame);
+            //fl.removeAllViews();
+            fm.beginTransaction().replace(R.id.content_frame, new AllMatchDaysFragment()).addToBackStack(null).commit();
 
         } else if (id == R.id.nav_table) {
+            FrameLayout fl = (FrameLayout) findViewById(R.id.content_frame);
+            //fl.removeAllViews();
+            fm.beginTransaction().replace(R.id.content_frame, new LeagueTableFragment()).addToBackStack(null).commit();
 
         }
 

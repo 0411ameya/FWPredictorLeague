@@ -15,12 +15,13 @@
     <string name="nav_matchday">Matchday</string>
     <string name="nav_allMatchdays">All Matchdays</string>
     <string name="nav_table">League Table</string>
+    <string name="nav_signout">Sign Out</string>
     <string name="title_activity_fw_login">My FWPL Sign in</string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in">Sign In</string>
     <string name="action_sign_in_short">Sign in</string>
     <string name="error_invalid_email">This email address is invalid</string>
     <string name="error_invalid_password">This password is too short</string>
@@ -29,6 +30,8 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+    <string name="dummy_question">Which team will score the highest number of goals in this game week?</string>
 
     <!-- String Array for Team Names -->
     <string-array name="TeamNames">
@@ -55,5 +58,10 @@
     </string-array>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //EndPOINTS
+    <!-- <string name="userAuthUrl">http://www.mocky.io/v2/597e14a30f0000b80906ecaf</string> -->
+    <string name="userAuthUrl">https://fwpl.herokuapp.com/login</string>
+    <string name="userAuthFailMsg">Username / Password you entered is incorrect, please try again!</string>
 
 </resources>

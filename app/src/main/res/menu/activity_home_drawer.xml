@@ -18,6 +18,10 @@
             android:id="@+id/nav_table"
             android:icon="@drawable/ic_equalizer_black_24dp"
             android:title="@string/nav_table" />
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="@string/nav_signout" />
     </group>
 
 </menu>
